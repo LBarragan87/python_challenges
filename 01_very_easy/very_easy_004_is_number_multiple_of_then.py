@@ -1,6 +1,6 @@
 '''
 instructions
-retur "true" if the number is a multiple of 10, and "false" otherwise
+return "true" if the number is a multiple of 10, and "false" otherwise
 '''
 import os
 os.system("cls")
