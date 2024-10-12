@@ -12,3 +12,21 @@ return back the original string for any string.
 
 (You may assume that the input to add_dots does not itself contain any dots.)
 '''
+
+
+def add_dots(text):
+    new_text = ""
+    for letter in text:
+        new_text = new_text + letter + "."
+    new_text = new_text[0:-1]
+    print(new_text)
+    return new_text
+
+
+def remove_dots(text):
+    print(text.replace(".", ""))
+    return text.replace(".", "")
+
+
+add_dots("test")
+remove_dots("t.e.s.t.")

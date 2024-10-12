@@ -12,7 +12,7 @@ def capital_indexes(text):
     letters_list = []
     letter_index = 0
     for letter in text:
-        if letter.upper() == letter:
+        if letter.isupper():
             letters_list.append(letter_index)
         letter_index += 1
     print(letters_list)

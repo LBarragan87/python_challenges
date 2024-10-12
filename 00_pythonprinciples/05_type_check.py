@@ -10,8 +10,14 @@ import os
 
 def only_ints(val1, val2):
     value1_is_int = isinstance(val1, int)
+    value1_is_bool = isinstance(val1, bool)
+
     value2_is_int = isinstance(val2, int)
-    if value1_is_int and value2_is_int:
+    value2_is_bool = isinstance(val2, bool)
+
+    if (value1_is_int and (value1_is_bool is False)) and (value2_is_int and (
+                                                            value2_is_bool is
+                                                            False)):
         print(True)
         return True
     else:
@@ -20,4 +26,4 @@ def only_ints(val1, val2):
 
 
 os.system("cls")
-only_ints(1, "a")
+only_ints(1, "b")

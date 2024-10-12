@@ -29,4 +29,4 @@ def double_letters(text):
 
 os.system("cls")
 double_letters("hello")
-double_letters("nono")
+double_letters("nnono")
