@@ -25,6 +25,7 @@ def zigzag_iterator(list1, list2):
         index += 1
 
     print(zig_zag_list)
+    return zig_zag_list
 
 
 zigzag_iterator([1, 2], [3, 4, 5, 6])

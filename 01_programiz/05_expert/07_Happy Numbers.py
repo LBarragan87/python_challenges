@@ -28,6 +28,10 @@ def is_happy(n):
         # print(suma)
     if suma == 1:
         print(f"{n} in happy number")
+        return True
+    else:
+        print(f"{n} is not happy number")
+        return False
 
 
 for n in range(11, 99):

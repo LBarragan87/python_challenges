@@ -14,7 +14,11 @@ def extract_numbers(s):
         except ValueError:
             "do nothing"
     print(numbers)
-    print("".join(numbers))
+    if len(numbers) > 0:
+        print("".join(numbers))
+        return "".join(numbers)
+    else:
+        return None
 
 
-extract_numbers('hello123world456')
+extract_numbers('noNumbersHere')

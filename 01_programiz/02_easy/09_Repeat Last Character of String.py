@@ -6,10 +6,10 @@ Return the new string with the repeated character.
 
 
 def repeat_last_char(string, n):
-    last_char = string[-1] * (n-1)
+    last_char = string[-1] * (n)
     new_s = string + last_char
     print(new_s)
     return new_s
 
 
-repeat_last_char("hello", 3)
+repeat_last_char("world", 2)
