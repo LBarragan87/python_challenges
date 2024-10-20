@@ -20,6 +20,7 @@ def product_except_self(nums):
         divitions.append(int(product/num))
 
     print(divitions)
+    return divitions
 
 
 product_except_self([1, 2, 3, 4])

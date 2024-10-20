@@ -39,6 +39,7 @@ def ginortS(s):
     master_list = lower_case + upper_case + odd_number + even_number
     new_text = "".join(master_list)
     print(new_text)
+    return new_text
 
 
 ginortS('Sorting1234')

@@ -24,8 +24,8 @@ def find_anagram(text, word):
         sub_word_sorted.sort()
 
         if sub_text_sorted == sub_word_sorted:
-            print(sub_text)
-            return sub_text
+            print(sub_text.lower())
+            return sub_text.lower()
     print("Anagram not found")
     return "Anagram not found"
 

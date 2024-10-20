@@ -1,0 +1,22 @@
+'''
+Write a function to find the m-th smallest value in k sorted lists.
+
+Define a function that takes a list of sorted lists and an integer m  as
+inputs.
+Inside the function, merge all the sorted lists into one list, sort it and
+return the m-th smallest value.
+Return the m-th smallest value from all the lists.
+'''
+
+
+def find_mth_smallest(lst, m):
+    new_list = []
+    for sub_lst in lst:
+        new_list += sub_lst
+    new_list.sort()
+    m_small = new_list[m-1]
+    print(m_small)
+    return m_small
+
+
+find_mth_smallest([[1, 3, 5], [2, 4, 6], [0, 7, 8], [9, 10, 11]], 5)
